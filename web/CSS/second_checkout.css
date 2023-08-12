@@ -1,0 +1,235 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Mar 10, 2023, 9:57:19 AM
+    Author     : MITHLESH-SINGH
+*/
+
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    /* list-style: none; */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins;
+}
+
+.spacing {
+    height: 50px;
+    width: 100%;
+    background-color: white;
+}
+
+nav {
+    background: #ff8522;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 7px 13px;
+    /* border-radius: 3px; */
+    text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+    /* background: #1b9bff; */
+    border-bottom: 2px solid white;
+    transition: .1s;
+    border-radius: none;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #e06500;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: white;
+        font-weight: 600;
+        border-bottom: 2px solid white;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+}
+
+/* ************************************ NAV PART ENDS HERE ************************************ */
+
+.product {
+    width: 85%;
+    background-color: rgb(255, 250, 244);
+    border-radius: 10px;
+    height: 570px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: #363636;
+}
+.product h2{
+    margin: 0 auto;
+}
+.payment-methods{
+    width: 85%;
+    height: 50%;
+    margin: 0 auto;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.module {
+    width: 250px;
+    height: 250px;
+    background-color: rgb(255, 251, 244);
+    border-radius: 20px;
+    box-shadow: 0px 0px 12px #f3f3f3;
+    margin: 20px;
+    overflow:hidden ;
+}
+.summary{
+    width: 81%;
+    height: 30%;
+    background-color: rgb(255, 237, 225);
+    margin: 0 auto;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    border: 1px solid #e06500;
+}
+.name h1{
+    height: 50px;
+    color: #363636;
+    font-size: 20px;
+    margin: 20px;
+    font-weight: 500;
+}
+.name p{
+    font-size: 9px;
+}
+.amount {
+    height: 50px;
+    color: #363636;
+    font-size: 18px;
+}
+.amount p {
+    padding: 12px;
+    background-color: #ff8522;
+    color: white;
+    margin: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.moduleImage{
+    width: 250px;
+    height: 200px;
+    background-color: rgb(82, 249, 255);
+}
+.moduleName{
+    font-size: 16px;
+    text-align: center;
+    color: #363636;
+    margin-top: 12px;
+    font-weight: 600;
+}
+.module:hover{
+    background-color: #ff8522;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 0px 12px #dfbda0;
+}
+.moduleName:hover{
+    color: white;
+}
+.spacing2{
+    height: 20px;
+    background-color: white;
+    width: 100%;
+}
+.footer {
+    width: 100%;
+    background-color: #ff8b1f;
+    height: 70px;
+}

@@ -1,0 +1,108 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Mar 10, 2023, 9:57:19 AM
+    Author     : MITHLESH-SINGH
+*/
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+}
+
+.right {
+    width: 50%;
+    float: right;
+    height: 743px;
+    background-color: #ff8522;
+    position: fixed;
+    margin-left: 775px;
+    /* position: absolute;
+    right: 0;
+    top: 0; */
+}
+
+.left {
+    width: 50%;
+    float: left;
+    height: 500px;
+    /* overflow: scroll; */
+}
+
+.spacing {
+    height: 50px;
+}
+
+.form h1 {
+    color: #4b4b4b;
+}
+
+
+.mainButton {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ff8522;
+    padding: 10px 150px;
+    width: 360px;
+    text-align: justify;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: flex;
+    border-radius: 10px;
+    margin: 20px 0px 0px 0px;
+    cursor: pointer;
+    border: none;
+}
+
+.mainButton:hover,
+.mainButton:focus,
+.mainButton:active {
+    box-shadow: 0px 1px 9px 0px #ffc3b4;
+    background-color: #ff933b;
+}
+
+input {
+    height: 18px;
+    width: 360px;
+    border: 1px solid lightgrey;
+    border-radius: 9px;
+    margin: 10px 0px 21px 0px;
+    padding: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form {
+    /* color: #636363; */
+    font-family: 'Poppins', sans-serif;
+    padding: 90px 50px 20px 90px;
+    /* display: ; */
+}
+
+::placeholder {
+    font-family: 'Poppins', sans-serif;
+    color: #636363;
+}
+
+a {
+    text-decoration: none;
+}
+
+.form label {
+    font-size: 14px;
+    color: #363636;
+}
+/* input:active, input:focus{
+    border: none;
+    border-bottom: 2px solid #ff8522;
+    border-color: #ff8522;
+    stroke-opacity: 0;
+} */

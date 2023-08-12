@@ -1,0 +1,325 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Mar 10, 2023, 9:57:19 AM
+    Author     : MITHLESH-SINGH
+*/
+
+
+        * {
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            /* list-style: none; */
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Poppins;
+        }
+
+        .spacing {
+            height: 50px;
+            width: 100%;
+            background-color: white;
+        }
+
+        nav {
+            background: #ff8522;
+            height: 80px;
+            width: 100%;
+        }
+
+        label.logo {
+            color: white;
+            font-size: 35px;
+            line-height: 80px;
+            padding: 0 100px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            float: right;
+            margin-right: 20px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+        }
+
+        nav ul li a {
+            color: white;
+            font-weight: 500;
+            font-size: 17px;
+            padding: 7px 13px;
+            /* border-radius: 3px; */
+            text-transform: uppercase;
+        }
+
+        a.active,
+        a:hover {
+            /* background: #1b9bff; */
+            border-bottom: 2px solid white;
+            transition: .1s;
+            border-radius: none;
+        }
+
+        .checkbtn {
+            font-size: 30px;
+            color: white;
+            float: right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+        }
+
+        #check {
+            display: none;
+        }
+
+        @media (max-width: 952px) {
+            label.logo {
+                font-size: 30px;
+                padding-left: 50px;
+            }
+
+            nav ul li a {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 858px) {
+            .checkbtn {
+                display: block;
+            }
+
+            ul {
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background: #e06500;
+                top: 80px;
+                left: -100%;
+                text-align: center;
+                transition: all .5s;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+            }
+
+            nav ul li a {
+                font-size: 20px;
+            }
+
+            a:hover,
+            a.active {
+                background: none;
+                color: white;
+                font-weight: 600;
+                border-bottom: 2px solid white;
+            }
+
+            #check:checked~ul {
+                left: 0;
+            }
+
+        }
+
+        /* ************************************ NAV PART ENDS HERE ************************************ */
+
+        .product {
+            width: 85%;
+            background-color: antiquewhite;
+            border-radius: 10px;
+            height: 300px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-evenly;
+            color: #363636;
+        }
+
+        .imageHolder {
+            width: 20%;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            height: 230px;
+            margin-top: 35px;
+            overflow: hidden;
+        }
+
+        .image {
+            height: 95%;
+            width: 95%;
+            background-color: aqua;
+            border-radius: 10px;
+            margin: 0 auto;
+            margin-top: 5px;
+        }
+
+        .product-title {
+            font-weight: 600;
+            margin: 15px;
+            text-align: center;
+        }
+
+        .product-price {
+            padding: 10px;
+            background-color: #ff8522;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 600;
+            width: 270px;
+            margin: 0 auto;
+            color: white;
+        }
+
+        .buttons {
+            padding: 10px 0px;
+            margin: 0 auto;
+            /* background-color: black; */
+            width: 450px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            float: right;
+            margin-right: 100px;
+        }
+
+        .Button {
+            padding: 10px 0px;
+            border: 2px solid #ff8522;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 700;
+            width: 130px;
+            font-family: 'Poppins';
+            font-size: 12px;
+            background-color: white;
+            cursor: pointer;
+            color: #363636;
+        }
+
+        .Close-Button {
+            padding: 10px 0px;
+            border: 2px solid #ff2222;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 700;
+            width: 130px;
+            font-family: 'Poppins';
+            font-size: 12px;
+            background-color: white;
+            cursor: pointer;
+            color: #363636;
+        }
+        .Close-Button:hover{
+            background-color: #f53d46;
+            color: white;
+        }
+
+        .Checkout-Button {
+            padding: 10px 0px;
+            border: 2px solid #16df6a;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 700;
+            width: 130px;
+            font-family: 'Poppins';
+            font-size: 12px;
+            background-color: white;
+            cursor: pointer;
+            color: #363636;
+        }
+
+        .Checkout-Button:hover{
+            background-color: #14c45d;
+            color: white;
+        }
+        .Button:hover {
+            background-color: #ff8522;
+            color: white;
+        }
+
+        .delivery,
+        .services {
+            width: 30%;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            height: 270px;
+            margin-top: 15px;
+            padding: 27px;
+        }
+
+        .delivery h1,
+        .services h1 {
+            color: #4b4b4b;
+            font-weight: 600;
+            font-size: 25px;
+        }
+
+        .delivery h2,
+        .services h2 {
+            color: #363636;
+            font-weight: 600;
+            font-size: 16px;
+            display: inline;
+        }
+
+        .delivery p,
+        .services p {
+            color: #616161;
+            font-weight: 400;
+            font-size: 14px;
+            display: inline;
+        }
+
+        .spacing2 {
+            height: 16px;
+            background-color: white;
+            width: 100%;
+        }
+
+        .H1 {
+            color: #636363;
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .remove {
+            text-decoration: none;
+            color: #ff0808;
+            display: inline;
+        }
+        .edit-button{
+            padding: 7px 0px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 700;
+            width: 70px;
+            font-family: 'Poppins';
+            font-size: 12px;
+            background-color:#14c45d;
+            cursor: pointer;
+            color: #ffffff;
+            border: none;
+            display: inline;
+            position: absolute;
+            right: 150px;
+        }
+        .footer {
+            width: 100%;
+            background-color: #ff8b1f;
+            height: 70px;
+            position: fixed;
+            bottom: 0;
+        }
+    
